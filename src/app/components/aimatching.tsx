@@ -8,7 +8,7 @@ const HEADER_STYLES = "flex flex-col items-center justify-center";
 const TITLE_STYLES =
   "mb-10 mt-36 px-3 text-3xl font-bold !leading-[1.5] sm:text-7xl text-dark-green ";
 const SUBTITLE_STYLES =
-  " px-4 font-medium !leading-[1.5] text-2xl text-dark-green ";
+  "my-4 px-4 font-medium !leading-[1.5] text-2xl  text-dark-green ";
 
 const BUTTON_STYLES =
   " bg-dark-orange text-white rounded-full p-3 m-5 poppins ";
@@ -30,10 +30,23 @@ const Aimatching = () => {
           </p>
         </div>
         <div>
-          <p className={SUBTITLE_STYLES}>
-            Interactive Discovery: Share your interests, preferences, and
-            comfort level through a friendly chat with our intuitive chatbot.
-          </p>
+          <ul>
+            <li className={SUBTITLE_STYLES}>
+              <strong>Interactive Discovery:</strong> Share your interests,
+              preferences, and comfort level through a friendly chat with our
+              intuitive chatbot.
+            </li>
+            <li className={SUBTITLE_STYLES}>
+              <strong>Tailored Suggestions:</strong> The chatbot uses AI to
+              recommend events, activities, and participants that align with
+              your unique social style.
+            </li>
+            <li className={SUBTITLE_STYLES}>
+              <strong>Real-Time Guidance:</strong> Not sure what to do next?
+              Your chatbot is always available to answer questions, suggest
+              icebreakers, and help you ease into new connections.
+            </li>
+          </ul>
         </div>
         <div className="mt-14">
           <h3 className="text-dark-green text-1xl ">

@@ -3,28 +3,48 @@
 @tailwind utilities;
 
 @layer base {
-    .font-outline-2 {
-        -webkit-text-stroke: 0.2px #9aac98;
-    }
+  .font-outline-2 {
+    -webkit-text-stroke: 0.2px #9aac98;
+  }
 
-    /* .font-outline-4 {
+  /* .font-outline-4 {
         -webkit-text-stroke: 4px black;
     } */
 }
 
-
 .montserrat {
-    font-family: var(--font-montserrat);
+  font-family: var(--font-montserrat);
 }
 
 .poppins {
-    font-family: var(--font-poppins);
+  font-family: var(--font-poppins);
 }
 
 .dark-green {
-    color: #9aac98
+  color: #9aac98;
 }
 
 .dark-orange {
-    color: #F79D7D
+  color: #f79d7d;
+}
+
+#section_footer {
+  width: 100%;
+  background: #c3cffa;
+
+  a,
+  span {
+    color: #fff;
+    font-size: 0.75em;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    color: #fff;
+    font-size: 0.5em;
+  }
 }

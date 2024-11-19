@@ -9,7 +9,7 @@ const TITLE_STYLES =
   "mb-10 mt-52 px-3 text-3xl font-bold !leading-[1.5] sm:text-7xl  text-dark-green ";
 const SUBTITLE_STYLES =
   " px-4 text-small font-normal !leading-[1.5] sm:text-xl dark-green ";
-const CONTENT_CONTAINER_STYLES = "pt-6  ";
+const CONTENT_CONTAINER_STYLES = "pt-6 ";
 const BUTTON_STYLES =
   " bg-light-purple text-white rounded-md py-2 px-6 w-full mt-auto  ";
 
@@ -24,6 +24,7 @@ const BOOKS_IMG = "/images/books.jpg";
 const ART_IMG = "/images/art.jpg";
 const BEACH_IMG = "/images/beach.png";
 const FLOWERS_IMG = "/images/flowers.jpg";
+const DOG_IMG = "/images/dog.jpg";
 
 const IMG_WIDTH = 500;
 const IMG_HEIGHT = 300;
@@ -133,16 +134,16 @@ const About = () => {
           <div className={`${GRID_ITEMS}`}>
             <Image
               className={IMG_STYLES}
-              src={BOOKS_IMG}
+              src={DOG_IMG}
               width={IMG_WIDTH}
               height={IMG_HEIGHT}
-              alt="Image of a book club"
+              alt="Image of a dog and woman"
               placeholder="blur"
               blurDataURL="data:image/jpeg;base64,..." // Add a small Data URL here
             />
             <div className={CONTENT_CONTAINER_STYLES}>
-              <h1 className="font-bold">Dog Walking</h1>
-              <p>For those who love dogs & physical activity.</p>
+              <h1 className="font-bold">Dog Cuddles</h1>
+              <p>Introverts who love dogs.</p>
             </div>
             <button className={BUTTON_STYLES}>Learn more</button>
           </div>
