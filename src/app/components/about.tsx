@@ -9,10 +9,9 @@ const TITLE_STYLES =
   "mb-10 mt-52 px-3 text-3xl font-bold !leading-[1.5] sm:text-7xl  text-dark-green ";
 const SUBTITLE_STYLES =
   " px-4 text-small font-normal !leading-[1.5] sm:text-xl dark-green ";
-const CONTENT_CONTAINER_STYLES = "p-2 ";
-const CONTENT_STYLES = "text-md";
+const CONTENT_CONTAINER_STYLES = "pt-6 ";
 const BUTTON_STYLES =
-  " bg-light-purple text-white rounded-md py-2 px-6 w-full  ";
+  " bg-light-purple text-white rounded-md py-2 px-6 w-full mt-auto  ";
 
 const IMG_STYLES = "rounded-md";
 
@@ -23,6 +22,8 @@ const COOKING_IMG = "/images/cooking.jpg";
 const BOOKCLUB_IMG = "/images/book-club.jpg";
 const BOOKS_IMG = "/images/books.jpg";
 const ART_IMG = "/images/art.jpg";
+const BEACH_IMG = "/images/beach.png";
+const FLOWERS_IMG = "/images/flowers.jpg";
 
 const IMG_WIDTH = 500;
 const IMG_HEIGHT = 300;
@@ -61,12 +62,12 @@ const About = () => {
               <h1 className="font-bold">Cooking Class</h1>
               <p>Introverts who love to cook.</p>
             </div>
-            <button className={BUTTON_STYLES}>Join</button>
+            <button className={BUTTON_STYLES}>Learn more</button>
           </div>
           <div className={`${GRID_ITEMS}`}>
             <Image
               className={IMG_STYLES}
-              src={BOOKS_IMG}
+              src={FLOWERS_IMG}
               width={IMG_WIDTH}
               height={IMG_HEIGHT}
               alt="Image of a book club"
@@ -74,10 +75,10 @@ const About = () => {
               blurDataURL="data:image/jpeg;base64,..." // Add a small Data URL here
             />
             <div className={CONTENT_CONTAINER_STYLES}>
-              <h1 className="font-bold">Book Club</h1>
-              <p>Introverts who love to read.</p>
+              <h1 className="font-bold">Chat & Chill</h1>
+              <p>Introverts who love to chill.</p>
             </div>
-            <button className={BUTTON_STYLES}>Join</button>
+            <button className={BUTTON_STYLES}>Learn more</button>
           </div>
           <div className={`${GRID_ITEMS}`}>
             <Image
@@ -85,7 +86,7 @@ const About = () => {
               src={ART_IMG}
               width={IMG_WIDTH}
               height={IMG_HEIGHT}
-              alt="Image of art pencils"
+              alt="Image of women with tulips"
               placeholder="blur"
               blurDataURL="data:image/jpeg;base64,..." // Add a small Data URL here
             />
@@ -93,12 +94,14 @@ const About = () => {
               <h1 className="font-bold">Art Club</h1>
               <p>Introverts who love to art</p>
             </div>
-            <button className={BUTTON_STYLES}>Join</button>
+            <div className="flex flex-col">
+              <button className={BUTTON_STYLES}>Learn more</button>
+            </div>
           </div>
           <div className={`${GRID_ITEMS}`}>
             <Image
               className={IMG_STYLES}
-              src={ART_IMG}
+              src={BEACH_IMG}
               width={IMG_WIDTH}
               height={IMG_HEIGHT}
               alt="Image of a book "
@@ -106,18 +109,18 @@ const About = () => {
               blurDataURL="data:image/jpeg;base64,..." // Add a small Data URL here
             />
             <div className={CONTENT_CONTAINER_STYLES}>
-              <h1 className="font-bold">Art Club</h1>
-              <p>Introverts who love to do art.</p>
+              <h1 className="font-bold">Beach Day</h1>
+              <p>Introverts who love to Beach.</p>
             </div>
-            <button className={BUTTON_STYLES}>Join</button>
+            <button className={BUTTON_STYLES}>Learn more</button>
           </div>
           <div className={`${GRID_ITEMS}`}>
             <Image
               className={IMG_STYLES}
-              src={ART_IMG}
+              src={BOOKS_IMG}
               width={IMG_WIDTH}
               height={IMG_HEIGHT}
-              alt="Image of drawing pencils"
+              alt="Image of women at the beach laughing"
               placeholder="blur"
               blurDataURL="data:image/jpeg;base64,..." // Add a small Data URL here
             />
@@ -125,7 +128,7 @@ const About = () => {
               <h1 className="font-bold">Book Club</h1>
               <p>For those who love to read</p>
             </div>
-            <button className={BUTTON_STYLES}>Join</button>
+            <button className={BUTTON_STYLES}>Learn more</button>
           </div>
           <div className={`${GRID_ITEMS}`}>
             <Image
@@ -138,10 +141,10 @@ const About = () => {
               blurDataURL="data:image/jpeg;base64,..." // Add a small Data URL here
             />
             <div className={CONTENT_CONTAINER_STYLES}>
-              <h1 className="font-bold">Book Club</h1>
-              <p>For those who love to read</p>
+              <h1 className="font-bold">Dog Walking</h1>
+              <p>For those who love dogs & physical activity.</p>
             </div>
-            <button className={BUTTON_STYLES}>Join</button>
+            <button className={BUTTON_STYLES}>Learn more</button>
           </div>
         </div>
         <div>

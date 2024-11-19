@@ -1,5 +1,6 @@
 import Header from "./components/header";
 import About from "./components/about";
+import AImatching from "./components/aimatching";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <main className="flex flex-col p-5">
         <Header />
         <About />
+        <AImatching />
       </main>
     </div>
   );
