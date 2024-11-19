@@ -6,7 +6,7 @@ const SECTION_STYLES =
   "mb-28 max-w-[60rem] text-center sm:mb-0 scroll-mt-[100rem] poppins";
 const HEADER_STYLES = "flex flex-col items-center justify-center";
 const TITLE_STYLES =
-  "mb-10 mt-36 px-3 text-3xl font-bold !leading-[1.5] sm:text-7xl text-white ";
+  "mb-10 mt-36 px-3 text-3xl font-bold !leading-[1.5] sm:text-7xl text-dark-green ";
 const SUBTITLE_STYLES =
   " px-4 font-medium !leading-[1.5] text-2xl text-dark-green ";
 
@@ -18,13 +18,21 @@ const Aimatching = () => {
     <section className={SECTION_STYLES}>
       <div className={HEADER_STYLES}>
         <div>
-          <h1 className={TITLE_STYLES}>Meaningful Connections, Your Way.</h1>
+          <h1 className={TITLE_STYLES}>
+            AI Matching: Connecting You with the Right People and Experiences.
+          </h1>
         </div>
         <div>
           <p className={SUBTITLE_STYLES}>
-            Discover a low-pressure platform designed for introverted women to
-            build genuine relationships through guided activities, shared
-            interests, and a welcoming community.
+            Navigating social opportunities just got easier with our
+            chatbot-powered AI matching system. Think of it as your personal
+            connection concierge—here to guide you every step of the way.
+          </p>
+        </div>
+        <div>
+          <p className={SUBTITLE_STYLES}>
+            Interactive Discovery: Share your interests, preferences, and
+            comfort level through a friendly chat with our intuitive chatbot.
           </p>
         </div>
         <div className="mt-14">

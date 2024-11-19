@@ -4,18 +4,18 @@ import Image from "next/image";
 
 const SECTION_STYLES =
   "mb-28 max-w-[60rem] text-center sm:mb-0 scroll-mt-[100rem] poppins";
-const HEADER_STYLES = "GRID GRID-col items-center justify-center";
+const HEADER_STYLES = "grid grid-col items-center justify-center";
 const TITLE_STYLES =
   "mb-10 mt-52 px-3 text-3xl font-bold !leading-[1.5] sm:text-7xl  text-dark-green ";
 const SUBTITLE_STYLES =
   " px-4 text-small font-normal !leading-[1.5] sm:text-xl dark-green ";
-const CONTENT_CONTAINER_STYLES = "pt-6 ";
+const CONTENT_CONTAINER_STYLES = "pt-6  ";
 const BUTTON_STYLES =
   " bg-light-purple text-white rounded-md py-2 px-6 w-full mt-auto  ";
 
 const IMG_STYLES = "rounded-md";
 
-const GRID_CONTAINER = "grid grid-cols-3 grid-rows-2 gap-4 my-20";
+const GRID_CONTAINER = "grid grid-cols-3 grid-rows-2 gap-4 my-20 ";
 const GRID_ITEMS = "text-start p-4 border min-h-64 rounded-md bg-light-green";
 
 const COOKING_IMG = "/images/cooking.jpg";
