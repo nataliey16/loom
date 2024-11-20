@@ -6,31 +6,79 @@ const SECTION_STYLES =
   "mb-28 max-w-[60rem] text-center sm:mb-0 scroll-mt-[100rem] poppins";
 const HEADER_STYLES = "grid grid-col items-center justify-center";
 const TITLE_STYLES =
-  "mb-10 mt-52 px-3 text-3xl font-bold !leading-[1.5] sm:text-7xl  text-dark-green ";
+  "mb-10 mt-52 px-3 text-3xl font-bold !leading-[1.5] sm:text-7xl text-dark-green";
 const SUBTITLE_STYLES =
-  " px-4 text-small font-normal !leading-[1.5] sm:text-xl dark-green ";
-const CONTENT_CONTAINER_STYLES = "pt-6 ";
+  "px-4 text-small font-normal !leading-[1.5] sm:text-xl dark-green";
+const GRID_CONTAINER =
+  "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-20";
+const GRID_ITEMS =
+  "text-start p-4 border min-h-64 rounded-md bg-light-green flex flex-col";
+const IMG_STYLES = "rounded-md w-full h-auto";
 const BUTTON_STYLES =
-  " bg-light-purple text-white rounded-md py-2 px-6 w-full mt-auto  ";
-
-const IMG_STYLES = "rounded-md";
-
-const GRID_CONTAINER = "grid grid-cols-3 grid-rows-2 gap-4 my-20 ";
-const GRID_ITEMS = "text-start p-4 border min-h-64 rounded-md bg-light-green";
-
-const COOKING_IMG = "/images/cooking.jpg";
-const BOOKCLUB_IMG = "/images/book-club.jpg";
-const BOOKS_IMG = "/images/books.jpg";
-const ART_IMG = "/images/art.jpg";
-const BEACH_IMG = "/images/beach.png";
-const FLOWERS_IMG = "/images/flowers.jpg";
-const DOG_IMG = "/images/dog.jpg";
+  "bg-light-purple text-white rounded-md py-2 px-6 mt-4 self-center w-full";
 
 const IMG_WIDTH = 500;
 const IMG_HEIGHT = 300;
+
+interface CardProps {
+  imageSrc: string;
+  title: string;
+  description: string;
+}
+
+const Card: React.FC<CardProps> = ({ imageSrc, title, description }) => (
+  <div className={GRID_ITEMS}>
+    <Image
+      className={IMG_STYLES}
+      src={imageSrc}
+      width={IMG_WIDTH}
+      height={IMG_HEIGHT}
+      alt={title}
+    />
+    <div className="flex-1">
+      <h1 className="font-bold mt-4">{title}</h1>
+      <p>{description}</p>
+    </div>
+    <button className={BUTTON_STYLES}>Learn more</button>
+  </div>
+);
+
 const About = () => {
+  const activities = [
+    {
+      imageSrc: "/images/cooking.jpg",
+      title: "Cooking Class",
+      description: "Introverts who love to cook.",
+    },
+    {
+      imageSrc: "/images/flowers.jpg",
+      title: "Chat & Chill",
+      description: "Introverts who love to chill.",
+    },
+    {
+      imageSrc: "/images/art.jpg",
+      title: "Art Club",
+      description: "Introverts who love to art.",
+    },
+    {
+      imageSrc: "/images/beach.png",
+      title: "Beach Day",
+      description: "Introverts who love the beach.",
+    },
+    {
+      imageSrc: "/images/books.jpg",
+      title: "Book Club",
+      description: "For those who love to read.",
+    },
+    {
+      imageSrc: "/images/dog.jpg",
+      title: "Dog Cuddles",
+      description: "Introverts who love dogs.",
+    },
+  ];
+
   return (
-    <section className={SECTION_STYLES}>
+    <section id="about" className={SECTION_STYLES}>
       <div className={HEADER_STYLES}>
         <div>
           <h1 className={TITLE_STYLES}>
@@ -49,104 +97,14 @@ const About = () => {
           </p>
         </div>
         <div className={GRID_CONTAINER}>
-          <div className={`${GRID_ITEMS}`}>
-            <Image
-              className={IMG_STYLES}
-              src={COOKING_IMG}
-              width={IMG_WIDTH}
-              height={IMG_HEIGHT}
-              alt="Image of cooking"
-              placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,..." // Add a small Data URL here
+          {activities.map((activity, idx) => (
+            <Card
+              key={idx}
+              imageSrc={activity.imageSrc}
+              title={activity.title}
+              description={activity.description}
             />
-            <div className={CONTENT_CONTAINER_STYLES}>
-              <h1 className="font-bold">Cooking Class</h1>
-              <p>Introverts who love to cook.</p>
-            </div>
-            <button className={BUTTON_STYLES}>Learn more</button>
-          </div>
-          <div className={`${GRID_ITEMS}`}>
-            <Image
-              className={IMG_STYLES}
-              src={FLOWERS_IMG}
-              width={IMG_WIDTH}
-              height={IMG_HEIGHT}
-              alt="Image of a book club"
-              placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,..." // Add a small Data URL here
-            />
-            <div className={CONTENT_CONTAINER_STYLES}>
-              <h1 className="font-bold">Chat & Chill</h1>
-              <p>Introverts who love to chill.</p>
-            </div>
-            <button className={BUTTON_STYLES}>Learn more</button>
-          </div>
-          <div className={`${GRID_ITEMS}`}>
-            <Image
-              className={IMG_STYLES}
-              src={ART_IMG}
-              width={IMG_WIDTH}
-              height={IMG_HEIGHT}
-              alt="Image of women with tulips"
-              placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,..." // Add a small Data URL here
-            />
-            <div className={CONTENT_CONTAINER_STYLES}>
-              <h1 className="font-bold">Art Club</h1>
-              <p>Introverts who love to art</p>
-            </div>
-            <div className="flex flex-col">
-              <button className={BUTTON_STYLES}>Learn more</button>
-            </div>
-          </div>
-          <div className={`${GRID_ITEMS}`}>
-            <Image
-              className={IMG_STYLES}
-              src={BEACH_IMG}
-              width={IMG_WIDTH}
-              height={IMG_HEIGHT}
-              alt="Image of a book "
-              placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,..." // Add a small Data URL here
-            />
-            <div className={CONTENT_CONTAINER_STYLES}>
-              <h1 className="font-bold">Beach Day</h1>
-              <p>Introverts who love to Beach.</p>
-            </div>
-            <button className={BUTTON_STYLES}>Learn more</button>
-          </div>
-          <div className={`${GRID_ITEMS}`}>
-            <Image
-              className={IMG_STYLES}
-              src={BOOKS_IMG}
-              width={IMG_WIDTH}
-              height={IMG_HEIGHT}
-              alt="Image of women at the beach laughing"
-              placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,..." // Add a small Data URL here
-            />
-            <div className={CONTENT_CONTAINER_STYLES}>
-              <h1 className="font-bold">Book Club</h1>
-              <p>For those who love to read</p>
-            </div>
-            <button className={BUTTON_STYLES}>Learn more</button>
-          </div>
-          <div className={`${GRID_ITEMS}`}>
-            <Image
-              className={IMG_STYLES}
-              src={DOG_IMG}
-              width={IMG_WIDTH}
-              height={IMG_HEIGHT}
-              alt="Image of a dog and woman"
-              placeholder="blur"
-              blurDataURL="data:image/jpeg;base64,..." // Add a small Data URL here
-            />
-            <div className={CONTENT_CONTAINER_STYLES}>
-              <h1 className="font-bold">Dog Cuddles</h1>
-              <p>Introverts who love dogs.</p>
-            </div>
-            <button className={BUTTON_STYLES}>Learn more</button>
-          </div>
+          ))}
         </div>
         <div>
           <p className={SUBTITLE_STYLES}>

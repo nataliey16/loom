@@ -3,7 +3,7 @@
 import React from "react";
 
 const SECTION_STYLES =
-  "mb-28 max-w-[60rem] text-center sm:mb-0 scroll-mt-[100rem] poppins";
+  "mb-52 max-w-[60rem] text-center sm:mb-0 scroll-mt-[100rem] poppins";
 const HEADER_STYLES = "flex flex-col items-center justify-center";
 const TITLE_STYLES =
   "mb-10 mt-36 px-3 text-3xl font-bold !leading-[1.5] sm:text-7xl text-dark-green ";
@@ -22,11 +22,13 @@ const Aimatching = () => {
             AI Matching: Connecting You with the Right People and Experiences.
           </h1>
         </div>
+        {/* <div className="bg-blue right-[11rem] h-[31.25rem] w-[31.25rem] absolute bottom-0 -z-10 rounded-full blur-[10rem] dark:bg-[#946263]"></div> */}
         <div>
           <p className={SUBTITLE_STYLES}>
-            Navigating social opportunities just got easier with our
-            chatbot-powered AI matching system. Think of it as your personal
-            connection concierge—here to guide you every step of the way.
+            Our platform doesn’t just connect people—it fosters growth. With
+            AI-powered recommendations, guided social events, and reflective
+            growth spaces, you’ll have everything you need to connect, engage,
+            and grow at your own pace.
           </p>
         </div>
         <div>
@@ -48,13 +50,16 @@ const Aimatching = () => {
             </li>
           </ul>
         </div>
-        <div className="mt-14">
-          <h3 className="text-dark-green text-1xl ">
+        <div className="my-4">
+          <h3 className="text-dark-green text-2xl my-10">
             Join a Community That Feels Right for You.
           </h3>
-          <button className={BUTTON_STYLES}>Get Started Today</button>
+          {/* <button className={BUTTON_STYLES}>Get Started Today</button> */}
         </div>
       </div>
+      <div className="bg-[#C3CFFA] absolute bottom-0 -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
+      <div className="bg-[#EDF3DD] absolute bottom-10 -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
+      <div className="bg-[#F7BC7D] absolute bottom-20 -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
     </section>
   );
 };

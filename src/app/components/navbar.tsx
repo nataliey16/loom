@@ -24,20 +24,20 @@ const Navbar = () => {
     {
       id: 3,
 
-      link: "portfolio",
+      link: "AI Matching",
     },
 
     {
       id: 4,
 
-      link: "experience",
+      link: "Sign In",
     },
 
-    {
-      id: 5,
+    // {
+    //   id: 5,
 
-      link: "contact",
-    },
+    //   link: "contact",
+    // },
   ];
 
   return (

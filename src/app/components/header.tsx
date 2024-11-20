@@ -27,10 +27,10 @@ const Header = () => {
             interests, and a welcoming community.
           </p>
         </div>
-        <div className="mt-14">
-          <h3 className="text-dark-green text-1xl ">
+        <div className="mt-8">
+          {/* <h3 className="text-dark-green text-1xl ">
             Join a Community That Feels Right for You.
-          </h3>
+          </h3> */}
           <button className={BUTTON_STYLES}>Get Started Today</button>
         </div>
       </div>

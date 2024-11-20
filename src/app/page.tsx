@@ -1,3 +1,5 @@
+"use client";
+import React, { useCallback, useState } from "react";
 import Header from "./components/header";
 import About from "./components/about";
 import AImatching from "./components/aimatching";
