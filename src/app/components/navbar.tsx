@@ -9,11 +9,11 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   const links = [
-    // {
-    //   id: "1",
+    {
+      id: "1",
 
-    //   link: "/",
-    // },
+      link: "discussion",
+    },
 
     {
       id: 2,
