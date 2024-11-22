@@ -50,12 +50,6 @@ const Aimatching = () => {
             </li>
           </ul>
         </div>
-        <div className="my-4">
-          <h3 className="text-dark-green text-2xl my-10">
-            Join a Community That Feels Right for You.
-          </h3>
-          {/* <button className={BUTTON_STYLES}>Get Started Today</button> */}
-        </div>
       </div>
       <div className="bg-[#C3CFFA] absolute bottom-0 -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
       <div className="bg-[#EDF3DD] absolute bottom-10 -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>

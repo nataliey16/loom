@@ -57,6 +57,12 @@ const Testimonial = () => {
           ))}
         </div>
       </div>
+      <div className="my-4">
+        <h3 className="text-dark-green text-2xl my-10">
+          Join a Community That Feels Right for You.
+        </h3>
+        {/* <button className={BUTTON_STYLES}>Get Started Today</button> */}
+      </div>
     </section>
   );
 };
