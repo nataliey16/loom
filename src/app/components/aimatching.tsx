@@ -3,7 +3,7 @@
 import React from "react";
 
 const SECTION_STYLES =
-  "mb-52 max-w-[60rem] text-center sm:mb-0 scroll-mt-[100rem] poppins";
+  "mb-52 max-w-[70rem] text-center sm:mb-0 scroll-mt-[100rem] poppins";
 const HEADER_STYLES = "flex flex-col items-center justify-center";
 const TITLE_STYLES =
   "mb-10 mt-36 px-3 text-3xl font-bold !leading-[1.5] sm:text-7xl text-dark-green ";

@@ -3,6 +3,7 @@ import React, { useCallback, useState } from "react";
 import Header from "./components/header";
 import About from "./components/about";
 import AImatching from "./components/aimatching";
+import Testimonial from "./components/testimonial";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Header />
         <About />
         <AImatching />
+        <Testimonial />
       </main>
     </div>
   );

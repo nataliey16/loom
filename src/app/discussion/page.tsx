@@ -7,6 +7,7 @@ const TITLE_STYLES =
   "m-20 text-3xl font-bold !leading-[1.5] sm:text-7xl text-dark-green ";
 const SUBTITLE_STYLES =
   " px-4 font-medium !leading-[1.5] text-2xl text-dark-green";
+const BUTTON_STYLES = "bg-dark-orange p-4 rounded-xl text-white m-2 flex";
 
 type CardProps = {
   id: string;
@@ -46,10 +47,10 @@ const DiscussionCard = (props: CardProps) => {
       <div className="py-2">
         <h1 className="text-3xl p-4 font-bold text-center">{title}</h1>
         <p className="text-1xl p-4 text-start">{body}</p>
-        <p className="text-sm px-4 py-2 text-start text-gray">{author}</p>
-        <p className="text-sm px-4  py-2 text-start text-gray">{date}</p>
+        <p className="text-sm px-4 py-1 text-start text-gray">{author}</p>
+        <p className="text-sm px-4  py-1 text-start text-gray">{date}</p>
       </div>
-      <button className="bg-dark-orange p-4 rounded-xl text-white m-2 flex justify-start">
+      <button className={`${BUTTON_STYLES} justify-start`}>
         View Discussion
       </button>
     </div>
@@ -62,6 +63,9 @@ const Discussion = () => {
       <section className={SECTION_STYLES}>
         <div className={HEADER_STYLES}>
           <h1 className={TITLE_STYLES}>Introverts Anonymous </h1>
+        </div>
+        <div className="flex justify-end">
+          <button className={`${BUTTON_STYLES}`}>Create Post</button>
         </div>
         <div>
           {discussionContent.map((discussion) => (
