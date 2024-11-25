@@ -48,8 +48,9 @@ const Testimonial = () => {
           <h1 className={TITLE_STYLES}>Stories From Our Community</h1>
         </div>
         <div className="flex flex-row gap-4 py-10 italic">
-          {testimonialContent.map((testimonial) => (
+          {testimonialContent.map((testimonial, index) => (
             <TestimonialCard
+              key={index}
               id={testimonial.id}
               body={testimonial.body}
               author={testimonial.author}
