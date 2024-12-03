@@ -1,12 +1,12 @@
 "use client";
-
+import Link from "next/link";
 import React from "react";
 
 const SECTION_STYLES =
   "mb-28 mt-20 max-w-[70rem] text-center sm:mb-0 scroll-mt-[100rem] poppins";
 const HEADER_STYLES = "flex flex-col items-center justify-center";
 const TITLE_STYLES =
-  "mb-10 mt-36 px-3 text-3xl font-bold !leading-[1.5] sm:text-7xl text-white ";
+  "mb-10 mt-36 px-3 text-1xl font-bold !leading-[1.5] sm:text-7xl text-white ";
 const SUBTITLE_STYLES =
   " px-4 font-medium !leading-[1.5] text-2xl text-dark-green ";
 
@@ -18,7 +18,10 @@ const Header = () => {
     <section className={SECTION_STYLES}>
       <div className={HEADER_STYLES}>
         <div>
-          <h1 className={TITLE_STYLES}>Meaningful Connections, Your Way.</h1>
+          <h1 className={TITLE_STYLES}>
+            Meaningful Connections, <br />
+            Your Way.
+          </h1>
         </div>
         <div>
           <p className={SUBTITLE_STYLES}>
@@ -31,7 +34,9 @@ const Header = () => {
           {/* <h3 className="text-dark-green text-1xl ">
             Join a Community That Feels Right for You.
           </h3> */}
-          <button className={BUTTON_STYLES}>Get Started Today</button>
+          <Link href="/sign-up">
+            <button className={BUTTON_STYLES}>Get Started Today</button>
+          </Link>
         </div>
       </div>
     </section>

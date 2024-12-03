@@ -30,7 +30,7 @@ const Navbar = () => {
     {
       id: 4,
 
-      link: "Sign In",
+      link: "sign-up",
     },
 
     // {

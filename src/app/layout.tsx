@@ -43,23 +43,7 @@ export default function RootLayout({
       <body
         className={`${montserrat_init.variable} ${poppins_init.variable} antialiased`}
       >
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-      window.watsonAssistantChatOptions = {
-        integrationID: "2f4cfef4-3ff6-4521-bd2a-54065219e0f7", // The ID of this integration.
-        region: "aws-us-east-1", // The region your integration is hosted in.
-        serviceInstanceID: "20240605-0942-3221-70db-d80964322815", // The ID of your service instance.
-        onLoad: async (instance) => { await instance.render(); }
-      };
-      setTimeout(function(){
-        const t=document.createElement('script');
-        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-        document.head.appendChild(t);
-      });
-    `,
-          }}
-        />
+        <script />
         <div className="bg-[#F7BC7D] absolute top-[15rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
         <div className="bg-[#EDF3DD] absolute bottom-[6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
         <div className="bg-[#C3CFFA] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
@@ -73,3 +57,19 @@ export default function RootLayout({
     </html>
   );
 }
+
+//  dangerouslySetInnerHTML={{
+//           __html: `
+//     window.watsonAssistantChatOptions = {
+//       integrationID: "2f4cfef4-3ff6-4521-bd2a-54065219e0f7", // The ID of this integration.
+//       region: "aws-us-east-1", // The region your integration is hosted in.
+//       serviceInstanceID: "20240605-0942-3221-70db-d80964322815", // The ID of your service instance.
+//       onLoad: async (instance) => { await instance.render(); }
+//     };
+//     setTimeout(function(){
+//       const t=document.createElement('script');
+//       t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+//       document.head.appendChild(t);
+//     });
+//   `,
+//         }}
