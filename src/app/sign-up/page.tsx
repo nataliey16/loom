@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 const TITLE_STYLES =
@@ -12,7 +12,22 @@ const INPUT_STYLE =
 const BUTTON_STYLE =
   "mt-6 my-4 p-2 w-full text-sm rounded-lg bg-[#C3CFFA] text-white hover:bg-[#9697B4]";
 
-const SignUp = () => {
+interface SignUpProps {
+  firstName: string;
+  lastName: string;
+  email: string;
+  password: string;
+}
+
+const SignUp = (props: SignUpProps) => {
+  const { firstName, lastName, email, password } = props;
+  const [signUpForm, setSignUpForm] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+  });
+
   return (
     <div className="flex items-center justify-center min-h-screen mb-20">
       <div className={SECTION_STYLES}>
@@ -26,7 +41,7 @@ const SignUp = () => {
               id="firstName"
               name="firstName"
               placeholder="First Name"
-              // value={firstName}
+              value={firstName}
               // onChange={(e) => setFirstName(e.target.value)}
               required
             />
@@ -40,7 +55,7 @@ const SignUp = () => {
               id="lastName"
               name="lastName"
               placeholder="Last Name"
-              // value={lastName}
+              value={lastName}
               // onChange={(e) => setLastName(e.target.value)}
               required
             />
@@ -53,7 +68,7 @@ const SignUp = () => {
               id="email"
               name="email"
               placeholder="Email Address"
-              // value={email}
+              value={email}
               // onChange={(e) => setEmail(e.target.value)}
               required
             />
@@ -66,7 +81,7 @@ const SignUp = () => {
               id="password"
               name="password"
               placeholder="Password"
-              // value={password}
+              value={password}
               // onChange={(e) => setPassword(e.target.value)}
               required
             />
