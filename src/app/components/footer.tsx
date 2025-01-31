@@ -5,7 +5,6 @@ import {
   IoLogoFacebook,
   IoLogoInstagram,
   IoLogoLinkedin,
-  IoLogoTwitter,
   IoLogoYoutube,
 } from "react-icons/io5";
 
@@ -39,10 +38,6 @@ const Footer = () => {
           <Link href="" target="_blank" className="social-icon mx-1">
             <IoLogoLinkedin size={25} />
           </Link>
-
-          {/* <Link href="" target="_blank" className="social-icon mx-1">
-            <IoLogoTiktok size={25} />
-          </Link> */}
 
           <Link href="" target="_blank" className="social-icon mx-1">
             <IoLogoYoutube size={25} />
