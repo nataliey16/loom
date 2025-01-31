@@ -10,9 +10,6 @@ const TITLE_STYLES =
 const SUBTITLE_STYLES =
   "my-4 px-4 font-medium !leading-[1.5] text-2xl  text-dark-green ";
 
-const BUTTON_STYLES =
-  " bg-dark-orange text-white rounded-full p-3 m-5 poppins ";
-
 const Aimatching = () => {
   return (
     <section className={SECTION_STYLES}>

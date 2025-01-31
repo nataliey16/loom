@@ -46,13 +46,13 @@ const Navbar = () => {
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
 
         <h1 className="text-5xl font-signature ml-2 text-white font-bold poppins">
-          <a
+          <Link
             className="link-underline link-underline-black"
             href="/"
             rel="noreferrer"
           >
             Loom
-          </a>
+          </Link>
         </h1>
       </div>
 
