@@ -57,19 +57,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-//  dangerouslySetInnerHTML={{
-//           __html: `
-//     window.watsonAssistantChatOptions = {
-//       integrationID: "2f4cfef4-3ff6-4521-bd2a-54065219e0f7", // The ID of this integration.
-//       region: "aws-us-east-1", // The region your integration is hosted in.
-//       serviceInstanceID: "20240605-0942-3221-70db-d80964322815", // The ID of your service instance.
-//       onLoad: async (instance) => { await instance.render(); }
-//     };
-//     setTimeout(function(){
-//       const t=document.createElement('script');
-//       t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-//       document.head.appendChild(t);
-//     });
-//   `,
-//         }}
